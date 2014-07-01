@@ -6,7 +6,7 @@ void setup(void) {Serial.begin(9600);  pinMode(13, OUTPUT);  nfc.begin();  nfc.S
 String database[][3] = {
 //    Friendly Name                                 Tag UID                                 User's First Name
   "David's Left Hand",                       "FE:E2:70:5A",                                      "David",
-  "David's Right Hand",                      "04:8D:0C:F2:85:2A:84",                             "David"
+  "David's Right Hand",                      "FE:E2:70:5A",                             "David"
 }; int dbSize = sizeof(database) / sizeof(database[0]);
 
 void loop(void) {
